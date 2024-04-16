@@ -8,28 +8,40 @@
     semantic, image, paths, relative, absolute">
     <meta name="author" content="Taylor Martin">
     <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- canvas to draw / animate shapes -->
     <header>
-        <nav>
-            <!-- navbar links to other pages on site -->
-            <ul>
-                <li><a class="navItems" href="pages/java.html">java</a></li>
-                <li><a class="navItems" href="pages/csharp.html">c#</a></li>
-                <li><a class="navItems" href="pages/python.html">python</a></li>
-                <li><a class="navItems" href="pages/bash.html">bash</a></li>
-                <li><a class="navItems" href="pages/ruby.html">ruby</a></li>
-            </ul>
-        </nav>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <nav>
+                <!-- navbar links to other pages on site -->
+                <ul>
+                    <li><a class="navItems" href="pages/java.html">java</a></li>
+                    <li><a class="navItems" href="pages/csharp.html">c#</a></li>
+                    <li><a class="navItems" href="pages/python.html">python</a></li>
+                    <li><a class="navItems" href="pages/bash.html">bash</a></li>
+                    <li><a class="navItems" href="pages/ruby.html">ruby</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
     <main>
+        <!-- canvas to draw / animate shapes -->
         <canvas id="homeCanvas"></canvas>
     </main>
-    <footer>
-        <p>Copyright &copy;2024 by Taylor Martin</p>
+    <!-- fixing footer to bottom of page -->
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">Copyright &copy;2024 by Taylor Martin</p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
