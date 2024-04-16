@@ -10,19 +10,117 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+h1, h2, p {
+    text-align: left;
+    margin-left: 15px;
+    color: #1F252C;
+}
+
+h1 {
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.projectHeading {
+    font-family: "Playfair", serif;
+    font-size: 52px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.projectDescription {
+    max-width: 550px;
+    font-size: 14px;
+    margin-top: 25px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    background-color: #DDDDDD;
+    height: 100vh;
+}
+
+.grid-item {
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item:first-child {
+    border-right: 1px solid #C5C5C5;
+}
+
+@media (min-width: 768px) {
+    .grid-item:first-child {
+        min-width: 225px;
+        max-width: 350px;
+    }
+}
+
+.nested-grid-container { 
+    margin-top: 65px;
+}
+
+.nested-grid-container-1, .nested-grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    max-width: 900px;
+    margin-left: 15px;
+}
+
+.nested-grid-container-2 {
+    display: grid;
+    grid-template-columns: 1;
+    max-width: 900px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.nested-grid-container-3 {
+    margin-top: 30px;
+}
+
+
+.nested-grid-item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    height: 225px;
+}
+
+#nested-grid-item-1, #nested-grid-item-5 {
+    width:550px;
+}
+
+#nested-grid-item-2, #nested-grid-item-4 {
+    width:320px;
+}
+
+#nested-grid-item-3 {
+    width:900px;
+}
+
+.nested-grid-item:nth-child(3) {
+    width: 800px;
+}
+
 main {
     position: relative;
     grid-row: 2;
 }
 
-/* setting position and sizing of canvas */
-/* z-index = -1 so it doesn't interfere with other elements */
 #homeCanvas {
-    position: fixed; /* Change from absolute to fixed */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Use viewport width instead of percentage */
-    height: 100vh; /* Use viewport height instead of percentage */
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -30,29 +128,31 @@ main {
     height: 100vh;
 }
 
+#navList{
+    padding-left: 0;
+}
 
-/* removing bullets from list */
 ul {
     list-style-type: none;
 }
 
-/* making list horizontal (nav) */
 li {
     display: inline;
 }
 
-/* removing underline and changing colour of links */
 .navItems {
     color: #1F252C;
-    text-decoration: none; /* Add this line */
+    text-decoration: none;
+    padding: 20px;
+    margin: 30px;
+    font-size: 32px;
 }
 
-/* hover event on links to show its selection */
 .navItems:hover {
     color: #1F252C;
     font-weight: 700;
     font-style: italic;
-    text-decoration: none; /* Add this line */
+    text-decoration: none;
 }
 
 footer {
@@ -60,4 +160,3 @@ footer {
     font-size: 12px;
     grid-row: 3;
 }
-
