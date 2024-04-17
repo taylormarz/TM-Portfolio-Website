@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <!-- acts as first project page -->
     <div class="grid-container">
         <div class="grid-item">
             <h1>- java</h1>
@@ -21,33 +20,42 @@
                 <nav class="mainNav">
                     <!-- navbar links to other pages on site -->
                     <ul id="projectNav">
-                        <li><a id="activePage">- javafx program</a></li>
+                        <li><a href="java.html">javafx program</a></li>
                         <li><a href="projects/connect4.html">connect four</a></li>
                         <li><a href="projects/integers.html">integer converter</a></li>
-                        <li id="about"><a href="about.html">about</a></li>
+                        <li id="about"><a id="activePage">- about</a></li>
                         <li><a href="../index.html">home</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="grid-item">
-            <h2 class="projectHeading">javafx program</h2>
-            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in.
+            <h2 class="projectHeading">about</h2>
+            <p id="aboutDescription">I'm an OCAD University graduate with a Bachelor of Design. 
+                I've worked for the last five years at a product design agency, partnering with organizations 
+                such as the NFL, FIFA, and Activision Blizzard. I'm currently pursuing a diploma in Computer 
+                Programming & Analysis from George Brown College, which uniquely positions me to bridge the 
+                gap between design and development teams. 
+                <br>
+                <br>
+                I specialize in user research, leveraging methodologies 
+                such as usability testing to inform product decisions with a focus on accessibility. I'm interested 
+                in working with user experience teams, specifically on the engineering side, where I can advocate 
+                for design and development best practices.
+            </p>
+            <p id="aboutDescription"><b>education:</b>
+                <br>
+                <br>
+                George Brown College, Computer Programming & Analysis - 2025
+                <br>
+                OCAD University, Bachelor of Design - 2019
+                <br>
+                <br>
+                <a id="githubLink" href="https://github.com/taylormarz">github link</a>
             </p>
             <div class="nested-grid-container">
-                <div class="nested-grid-container-1">
-                    <div id="nested-grid-item-1" class="nested-grid-item">Image 1</div>
-                    <div id="nested-grid-item-2" class="nested-grid-item">Image 2</div>
-                </div>
-                <div class="nested-grid-container-2">
-                    <div id="nested-grid-item-3" class="nested-grid-item">Image 3</div>
-                </div>
-                <div class="nested-grid-container-3">
-                    <div id="nested-grid-item-4" class="nested-grid-item">Image 4</div>
-                    <div id="nested-grid-item-5" class="nested-grid-item">Image 5</div>
+                <div class="aboutContainer">
+                    <div id="nested-grid-item-1" class="btn btn-lg" style="max-width: 325px;" onclick="downloadPDF()">download resume</div>
                 </div>
             </div>
         </div>

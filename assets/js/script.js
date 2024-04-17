@@ -1,3 +1,4 @@
+// animation for home page
 const canvas = document.getElementById('homeCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -160,4 +161,18 @@ function draw() {
 
 draw();
 
+// downloading resume pdf
+function downloadPDF() {
+    var pdfUrl = '../TaylorMartin-Resume-2024.pdf';
+    var link = document.createElement('a');
+
+    link.href = pdfUrl;
+    link.download = 'TaylorMartin-Resume-2024.pdf';
+    
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+}
 
