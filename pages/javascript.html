@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <meta name="description" content="Webpage containing HTML, CSS, and JavaScript. It's a portfolio.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, web page, landing page, color, border, margins,
+    semantic, image, paths, relative, absolute">
+    <meta name="author" content="Taylor Martin">
+    <title>Taylor Martin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    
+    <!-- acts as first project page -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1>- javascript</h1>
+            <div class="d-flex justify-content-left align-items-top vh-100">
+                <nav class="mainNav">
+                    <!-- navbar links to other pages on site -->
+                    <ul id="projectNav">
+                        <li><a id="activePage">- portfolio website</a></li>
+                        <!-- <li><a href="projects/integers.html">integer converter</a></li> -->
+                        <li id="about"><a href="about.html">about</a></li>
+                        <li><a href="../index.html">home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h2 class="projectHeading">portfolio website</h2>
+            <p class="projectDescription">I created a portfolio that would give me the opportunity to be
+                experimental in both programming and design. I wanted to make something that was minimalist 
+                in nature, and allowed the projects on the website standout. I also wanted to challenge myself
+                by using elements I hadn't tried yet in HTML and JavaScript. Specifically, I wanted to try 
+                and make an animation for drawings with the HTML Canvas element.
+            </p>
+            <div class="nested-grid-container">
+                <div class="nested-grid-container-1">
+                    <div id="nested-grid-item-1" class="nested-grid-item">
+                        <img src="../assets/img/portfolio-1.png" style="border: 1px solid #1F252C;">
+                    </div>
+                    <div id="nested-grid-item-2" class="nested-grid-item">
+                        <img src="../assets/img/portfolio-2.png" style="border: 1px solid #1F252C;">
+                    </div>
+                </div>
+                <div class="nested-grid-container-2">
+                    <div id="nested-grid-item-3" class="nested-grid-item">
+                        <img src="../assets/img/portfolio-3.png" style="border: 1px solid #1F252C;">
+                    </div>
+                </div>
+                <div class="nested-grid-container-3">
+                    <div id="nested-grid-item-4" class="nested-grid-item">
+                        <img src="../assets/img/portfolio-4.png" style="border: 1px solid #1F252C;">
+                    </div>
+                    <div id="nested-grid-item-5" class="nested-grid-item">
+                        <img src="../assets/img/portfolio-5.png" style="border: 1px solid #1F252C;">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
 </body>
 </html>
